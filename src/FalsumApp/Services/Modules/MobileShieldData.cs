@@ -29,7 +29,6 @@ public static partial class MobileShieldData
         new() { Package="com.retinax", Name="Retinax", Notes="Parental control with stealth mode." },
         new() { Package="com.talklog", Name="Talklog", Notes="Call-recording abused as spouseware." },
         new() { Package="com.smsbackup", Name="SMS Backup+", Notes="Legit backup tool; check for unconsented installs." },
-        new() { Package="com.github.stalker", Name="Generic stalker builds", Notes="Placeholder pattern for GitHub-built trackers." },
         new() { Package="com.apspy.app", Name="TheTruthSpy family", Notes="TheTruthSpy/Copy9/MxSpy/iSpyoo backend; disguised as system service." },
         new() { Package="com.systemservice", Name="TheTruthSpy", Notes="Classic disguise name: 'System Service'." },
         new() { Package="com.thetruth", Name="TheTruthSpy", Notes="TheTruthSpy variant." },

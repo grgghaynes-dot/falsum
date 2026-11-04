@@ -31,11 +31,6 @@ public class LocalAIService
     /// Gregg's drift math is already wired into ScoreResponseCoherence via
     /// _coherence.GreggDriftMeasure. This allows runtime override if needed.
     /// </summary>
-    public void SetGreggMath(Func<double[], double> coherenceFunction)
-    {
-        _coherence.GreggCoherenceFunction = coherenceFunction;
-    }
-
     /// <summary>
     /// Check if the local AI server is running.
     /// </summary>

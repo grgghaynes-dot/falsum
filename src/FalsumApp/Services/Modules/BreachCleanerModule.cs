@@ -39,7 +39,7 @@ public static class BreachCleanerModule
         if (string.IsNullOrWhiteSpace(key))
         {
             results.Add(ModuleResult.Warn("BreachCleaner",
-                "HIBP key file is empty or still a placeholder."));
+                "HIBP API key not configured. Add your key to enable breach checking."));
             return results;
         }
         try

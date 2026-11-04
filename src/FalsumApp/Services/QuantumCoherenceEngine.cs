@@ -110,12 +110,6 @@ public class QuantumCoherenceEngine
     }
 
     /// <summary>
-    /// Legacy placeholder — replaced by Gregg's actual math above.
-    /// Kept for backward compatibility.
-    /// </summary>
-    public Func<double[], double>? GreggCoherenceFunction { get; set; } = null;
-
-    /// <summary>
     /// Quantum-inspired coherence scoring.
     /// Treats evidence pieces as quantum states in superposition.
     /// Consistent evidence interferes constructively (high coherence).
@@ -128,13 +122,6 @@ public class QuantumCoherenceEngine
     {
         if (evidence.Count == 0) return 0.0;
         if (evidence.Count == 1) return evidence[0].Confidence;
-
-        // If Gregg's math is loaded, use it as the primary scorer
-        if (GreggCoherenceFunction != null)
-        {
-            var confidences = evidence.Select(e => e.Confidence).ToArray();
-            return GreggCoherenceFunction(confidences);
-        }
 
         // Quantum-inspired fallback: superposition + interference
         // Each evidence is a complex amplitude: magnitude = confidence, phase = claim angle
